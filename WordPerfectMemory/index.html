@@ -5,28 +5,6 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
 <body background = "room.png">
-  <canvas id="canvas"></canvas>
-
-
-    <div class="container login">
-      <form id="login" action="/login/" method="post">
-        <div class="one-third column">
-          <img src="img/logo.png" alt="logo" id="logo" />
-        </div>
-        <div class="two-thirds column" id="main">
-          <fieldset>
-            <legend>Login</legend>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" />
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" />
-            <input type="submit" value="Login" />
-          </fieldset>
-        </div><!-- .two-thirds -->
-      </form>
-    </div><!-- .container -->
-    <script src="js/utilities.js"></script>
-    <script src="js/submit.js"></script>
 
   <script>
     var canvas = document.getElementById("canvas");
@@ -393,7 +371,7 @@ translate(400,100);
     ly =-99;
      fill(0, 0, 0);
      textSize(14);
-     text(elUsername,195,34);
+     //text(msg,195,34);
      fill(0, 0, 0);
      textAlign(CENTER);
      textSize(12);

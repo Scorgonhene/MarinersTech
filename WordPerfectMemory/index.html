@@ -5,7 +5,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
 <body background = "room.png">
-
+  <canvas id="canvas"></canvas>
   <script>
     var canvas = document.getElementById("canvas");
     var processing = new Processing(canvas, function(processing) {
@@ -19,7 +19,7 @@
         var keyIsPressed = false;
         processing.keyPressed = function () { keyIsPressed = true; };
         processing.keyReleased = function () { keyIsPressed = false; };
-
+	
         function getImage(s) {
             var url = "https://www.kasandbox.org/programming-images/" + s + ".png";
             processing.externals.sketch.imageCache.add(url);
@@ -52,7 +52,7 @@
 //image(getImage("room"),0,0);
 //Global variables
 
-
+//var arr = [1,2,3,4,5];
 var Logo = function(x,y,w,h){
     this.x =x;
     this.y =y;
@@ -371,11 +371,13 @@ translate(400,100);
     ly =-99;
      fill(0, 0, 0);
      textSize(14);
-     //text(msg,195,34);
+     text("Build",195,34);
      fill(0, 0, 0);
      textAlign(CENTER);
      textSize(12);
-     text("Build Your Masonic Memory",200,81);
+	//var speak = prompt("whats your name");
+	//var Speak = speak.split(" ");
+     text("Memorize",200,81);
      text("______________________",200,82);
      fill(0, 0, 0);
      stroke(0, 0, 0);
@@ -402,7 +404,22 @@ translate(400,100);
     //Training Day 1
     fill(0, 0, 0);
     //text("hello my name is slim shady, i want to be your friend, do you want to be my friend? I would \n                        GOAL :\n Develop the skill to memorize 300 words\n in an hour.\n\nTASKS : \n* Master the use of different memory systems and tools.\n* Form the ability to memorize 5 words per \n   minute.\n* Train your attention & will to memorize \n   300 words.",63,91);
-    text("hello my name is slim shady, i want to be your friend, do you want to be my friend? I would \nGOAL :\n* Develop the skill to memorize 300 words\n   in an hour.\n\nTASKS : \n* Form the ability to memorize 50 words in 10 minutes.\n* Master the use of different memory systems and \n   tools.\n* Train your attention & will to memorize 300 words.",61,91);
+/*var arr = [1,2,3,4,5];
+
+for(var i =0;i<arr.length;i++){
+    fill(255, 0, 0);
+    text(Speak[i],61,i*40+101);
+}*/
+var text1 = prompt ("write your text");
+
+
+//Remove Punctuation
+
+
+// Break up into chunks
+//Display numbers showing how many chunks
+
+text (text1.length, 200,200);
     miniLogo.small();
    popMatrix();     
 };

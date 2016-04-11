@@ -1,0 +1,7 @@
+user inputs data
+data is broken up into chunks of 20 words
+the data is then displayed for consumer
+user clicks button to memorize
+presented with another box
+user enters data again into second box
+first data and second data are compared to each other

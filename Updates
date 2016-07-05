@@ -32,3 +32,9 @@ Added calendar from rsvp that links to district events
 Changed Frontpage added group picture
 Add calendar widget
 Created a July events page, can do one for each month.
+Reset page back to default
+
+07/04/2016
+Downloaded and installing mediawiki. Manually created a new database. Was getting an error 301 message, but tech support helped clear that.
+Mariners page was getting a 404 error, I was told it was do a .htacess issue, but it was resolved.
+Wiki created edited, and education information added. Access restricted to login users
